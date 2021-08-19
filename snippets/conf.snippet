@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>conf</Title>
+      <Author>tzengshinfu</Author>
+      <Description>取得目前應用程式預設組態的 AppSettingsSection 資料</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>conf</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>key</ID>
+          <ToolTip>索引鍵名稱</ToolTip>
+          <Default>key</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[ConfigurationManager.AppSettings["$key$"]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

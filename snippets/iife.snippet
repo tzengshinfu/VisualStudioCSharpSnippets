@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>iife</Title>
+      <Author>tzengshinfu</Author>
+      <Description>IIFE 型式</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>iife</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>物件類型</ToolTip>
+          <Default>object</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>funcResult</ID>
+          <ToolTip>委託方法運算結果名稱</ToolTip>
+          <Default>funcResult</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>result</ID>
+          <ToolTip>運算結果名稱</ToolTip>
+          <Default>result</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[var $result$ = new Func<$type$>(() => {
+                $type$ $funcResult$;
+                $end$
+                return $funcResult$;
+            })();]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

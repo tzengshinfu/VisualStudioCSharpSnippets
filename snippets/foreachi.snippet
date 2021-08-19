@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>foreachi</Title>
+      <Author>tzengshinfu</Author>
+      <Description>foreach 陳述式(索引)</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>foreachi</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>集合中要逐一查看的物件類型</ToolTip>
+          <Default>var</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>identifier</ID>
+          <ToolTip>代表集合中元素的識別項</ToolTip>
+          <Default>item</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>collection</ID>
+          <ToolTip>要逐一查看的集合或陣列名稱</ToolTip>
+          <Default>collection</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>value</ID>
+          <ToolTip>識別項內容</ToolTip>
+          <Default>value</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>index</ID>
+          <ToolTip>識別項索引</ToolTip>
+          <Default>index</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[foreach ($type$ $identifier$ in $collection$.Select(($value$, $index$) => new { $value$, $index$ }))
+	{
+		$selected$ $end$
+	}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

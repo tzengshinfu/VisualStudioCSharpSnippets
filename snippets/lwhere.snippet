@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>lwhere</Title>
+      <Author>tzengshinfu</Author>
+      <Description>Where 方法</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>lwhere</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>result</ID>
+          <ToolTip>過濾後集合物件名稱</ToolTip>
+          <Default>result</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>collection</ID>
+          <ToolTip>集合物件名稱</ToolTip>
+          <Default>collection</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>identifier</ID>
+          <ToolTip>物件名稱</ToolTip>
+          <Default>item</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[var $result$ = $collection$.Where($identifier$ => $identifier$$end$);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

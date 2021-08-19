@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>lselect</Title>
+      <Author>tzengshinfu</Author>
+      <Description>Select 方法</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>lselect</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>identifier1</ID>
+          <ToolTip>集合物件名稱</ToolTip>
+          <Default>identifier1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>identifier2</ID>
+          <ToolTip>物件名稱</ToolTip>
+          <Default>identifier2</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>identifier3</ID>
+          <ToolTip>查詢結果</ToolTip>
+          <Default>identifier3</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[var $identifier3$ = $identifier1$.Select($identifier2$ => $identifier2$$end$);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

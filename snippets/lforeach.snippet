@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>lforeach</Title>
+      <Author>tzengshinfu</Author>
+      <Description>ForEach 方法</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>lforeach</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>collection</ID>
+          <ToolTip>集合或陣列名稱</ToolTip>
+          <Default>collection</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>identifier</ID>
+          <ToolTip>代表集合中元素的識別項</ToolTip>
+          <Default>item</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$collection$.ForEach($identifier$ => {
+                $end$
+            });]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
